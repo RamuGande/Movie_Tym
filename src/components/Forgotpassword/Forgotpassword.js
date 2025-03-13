@@ -57,6 +57,7 @@ const ForgotPassword = () => {
     e.preventDefault();
     setError("");
     setSuccess("");
+    console.log("hello");
      if (method === "email" && !email) {
         setError("Please enter your email address");
         return;
@@ -65,13 +66,14 @@ const ForgotPassword = () => {
         setError("Please enter your phone number");
         return;
       }
-    const res = await axios.post(`${process.env.REACT_APP_API_URL}/forgotpassword`, {
+      const res = await axios.post(`${process.env.REACT_APP_API_URL}/forgot-password`, {
       email: email,
       phone: phone
     });
     if (res.status === 200 ) {
       try {
         if(method===phone){
+          console.log("wow");
           const res = await axios.post(`${process.env.REACT_APP_API_URL}/send-otp/sms`,{phone:phone})
           setSentotp(await res.data.otp)
         }

@@ -80,3 +80,4 @@ INSERT INTO booking (user_id, show_id, seat_id) VALUES
 (1, 'S001', 2);
 
 alter table user add column email varchar(255);
+alter table user add column phone Bigint;

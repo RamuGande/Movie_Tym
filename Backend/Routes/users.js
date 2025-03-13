@@ -102,8 +102,9 @@ const transporter = nodemailer.createTransport({
     },
 });
 
-// Send OTP via Email
+
 app.post('/send-otp/email', (req, res) => {
+    console.log("email");
     const { email } = req.body;
     const otp = Math.floor(Math.random()*900)+1000;
 
@@ -123,13 +124,17 @@ app.post('/send-otp/email', (req, res) => {
 });
 
 
-app.post('/forgot-password', async (req, res) => {    
+app.post('/forgot-password', async (req, res) => { 
+    console.log("hii");   
     const { email, phone } = req.body;    
     try{
         const query = 'select * from user where email = ? or phone = ?';
         const result = await execute_query(query, [email, phone]);
         if(result.length>0){
             return res.status(200).send("user exists");
+        }
+        else{
+            return res.status(400).send("user does not exist");
         }
     }
     catch(err){
