@@ -85,15 +85,27 @@
     font-size: 14px;
     color: #495057;
     cursor: pointer;
+<<<<<<< HEAD
+=======
+    margin: 0 10px;
+>>>>>>> Abdul
   }
   
   .checkbox-label input[type="checkbox"] {
     width: 16px;
     height: 16px;
+<<<<<<< HEAD
   }
   
   .submit-butt {
     background-color: #0056b3;
+=======
+    margin-right: 10px;
+  }
+  
+  .submit-butt {
+    background-color: #00baf2;
+>>>>>>> Abdul
     color: white;
     padding: 12px 24px;
     border: none;

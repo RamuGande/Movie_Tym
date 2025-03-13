@@ -36,11 +36,19 @@ function AdminHome() {
       {showForm ? (
         <VendorForm onAddVendor={handleAddVendor} />
       ) : (
+<<<<<<< HEAD
+=======
+        <div className='list'>
+>>>>>>> Abdul
         <VendorList
           vendors={vendors}
           onDeleteVendor={handleDeleteVendor}
           onUpdateVendor={handleUpdateVendor}
         />
+<<<<<<< HEAD
+=======
+        </div>
+>>>>>>> Abdul
       )}
     </div>
   );

@@ -134,7 +134,11 @@ const VendorForm = ({ onAddVendor }) => {
         </div>
 
         {/* Theater Details Section */}
+<<<<<<< HEAD
         <div className="form-section">
+=======
+        <div className="form-sect">
+>>>>>>> Abdul
           <h3 className="section-title">Theater Details</h3>
           <div className="form-group">
             <label>Theater Name</label>
@@ -194,7 +198,11 @@ const VendorForm = ({ onAddVendor }) => {
         </div>
 
         {/* Theater Specifications */}
+<<<<<<< HEAD
         <div className="form-section">
+=======
+        <div className="form-sect">
+>>>>>>> Abdul
           <h3 className="section-title">Theater Specifications</h3>
           <div className="form-row">
             <div className="form-group">

@@ -166,4 +166,94 @@
   background-color: #f3f4f6;
   display: flex;
   align-items: center;
+<<<<<<< HEAD
 }
+=======
+}
+/* Base Slider Container */
+.slider-container {
+  position: relative;
+  width: 100%;
+  height: 70vh; /* Default desktop height */
+  background-color: #111827;
+  overflow: hidden;
+  margin-top: 10px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* Responsive Height Adjustments */
+@media screen and (max-width: 1024px) {
+  .slider-container {
+    height: 60vh; /* Slightly reduced for tablets */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .slider-container {
+    height: 50vh; /* Reduced for smaller tablets */
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .slider-container {
+    height: 40vh; /* Significantly reduced for mobile phones */
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .slider-container {
+    height: 30vh; /* Minimal height for very small screens */
+  }
+}
+
+/* Mobile-Specific Responsive Adjustments */
+@media screen and (max-width: 768px) {
+  .slide img {
+    object-fit: cover; /* Ensure image covers the container */
+    transition: transform 0.3s ease;
+  }
+
+  .slide.active img {
+    transform: scale(1.1); /* Subtle zoom effect */
+  }
+
+  .slide-overlay {
+    padding: 0.75rem; /* Reduced padding */
+  }
+
+  .slide-title {
+    font-size: 0.9rem; /* Smaller font size */
+  }
+
+  .slider-arrow {
+    width: 30px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.3); /* More visible on mobile */
+  }
+
+  .nav-dot {
+    width: 8px;
+    height: 8px;
+  }
+}
+
+/* Ultra Small Devices */
+@media screen and (max-width: 320px) {
+  .slider-container {
+    height: 25vh; /* Minimal height for extremely small screens */
+  }
+
+  .slide-title {
+    font-size: 0.7rem;
+  }
+}
+
+/* Additional Responsive Tweaks */
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 1rem;
+  transition: transform 0.5s ease;
+}
+>>>>>>> Abdul

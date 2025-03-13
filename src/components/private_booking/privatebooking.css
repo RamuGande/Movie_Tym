@@ -36,11 +36,20 @@
     margin: 30px;
   }
   
+<<<<<<< HEAD
   .booking-form {
+=======
+  .booking-forms {
+>>>>>>> Abdul
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     padding: 2rem;
+<<<<<<< HEAD
+=======
+    width: 80%;
+    margin: 0 auto;
+>>>>>>> Abdul
   }
   
   .form-group {
@@ -271,11 +280,36 @@
       flex-direction: row;
     }
     
+<<<<<<< HEAD
     .booking-form {
+=======
+    .booking-forms {
+>>>>>>> Abdul
       flex: 3;
     }
     
     .booking-info {
       flex: 2;
     }
+<<<<<<< HEAD
   }
+=======
+  }
+  @media (max-width: 768px) {
+    .booking-content {
+      flex-direction: column; /* Stack elements */
+      align-items: center; /* Center align */
+    }
+    
+    .booking-forms {
+      flex: none;
+      width: 100%; /* Full width */
+    }
+    
+    .booking-info {
+      flex: none;
+      width: 100%;
+    }
+  }
+  
+>>>>>>> Abdul

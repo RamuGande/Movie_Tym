@@ -10,7 +10,11 @@ function UserProfile() {
   const [userInfo, setUserInfo] = useState({
     name: 'Sandhya',
     email: 'Sandhya@example.com',
+<<<<<<< HEAD
     mobile: '9346592321',
+=======
+    mobile: '1234567890',
+>>>>>>> Abdul
     address: '123 Movie Street, Cinema City, ST 12345'
   });
   const [editedInfo, setEditedInfo] = useState(userInfo);

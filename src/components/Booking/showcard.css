@@ -4,6 +4,10 @@
     border-radius: 12px;
     padding: 16px;
     margin: 12px;
+<<<<<<< HEAD
+=======
+    
+>>>>>>> Abdul
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
     cursor: pointer;
@@ -17,7 +21,11 @@
 .show-card h3 {
     margin: 0 0 8px;
     font-size: 1.5rem;
+<<<<<<< HEAD
     color: #333;
+=======
+    color: #170b60;
+>>>>>>> Abdul
 }
 
 .show-card p {

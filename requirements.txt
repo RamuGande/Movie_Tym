@@ -3,6 +3,9 @@ react-slick --save
 react-icons
 slick-carousel
 axios
+<<<<<<< HEAD
 nodemailer
 twilio
+=======
+>>>>>>> Abdul
 
